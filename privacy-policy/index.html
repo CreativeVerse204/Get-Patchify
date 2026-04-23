@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | GET PATCHIFY</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #fff7fb 0%, #fdeef6 100%);
+      color: #2d1f2f;
+    }
+
+    .policy-page {
+      padding: 140px 20px 80px;
+    }
+
+    .policy-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .policy-hero {
+      background: linear-gradient(135deg, #fff 0%, #fff8fc 100%);
+      border: 1px solid #f3d7e5;
+      border-radius: 28px;
+      padding: 48px;
+      box-shadow: 0 18px 50px rgba(233, 92, 159, 0.08);
+      margin-bottom: 28px;
+    }
+
+    .policy-badge {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #fde7f1;
+      color: #e64697;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .policy-hero h1 {
+      margin: 0 0 16px;
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      color: #2f2237;
+    }
+
+    .policy-hero p {
+      margin: 0;
+      max-width: 850px;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #5d4a61;
+    }
+
+    .policy-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .policy-sidebar {
+      position: sticky;
+      top: 110px;
+      background: #fff;
+      border: 1px solid #f3d7e5;
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 14px 34px rgba(233, 92, 159, 0.06);
+    }
+
+    .policy-sidebar h3 {
+      margin: 0 0 16px;
+      font-size: 18px;
+      color: #2f2237;
+    }
+
+    .policy-sidebar a {
+      display: block;
+      text-decoration: none;
+      color: #6b566d;
+      padding: 10px 0;
+      font-size: 15px;
+      border-bottom: 1px solid #f8e4ee;
+      transition: 0.2s ease;
+    }
+
+    .policy-sidebar a:hover {
+      color: #e64697;
+      padding-left: 6px;
+    }
+
+    .policy-content {
+      background: #fff;
+      border: 1px solid #f3d7e5;
+      border-radius: 28px;
+      padding: 42px;
+      box-shadow: 0 18px 50px rgba(233, 92, 159, 0.07);
+    }
+
+    .policy-section {
+      padding-bottom: 34px;
+      margin-bottom: 34px;
+      border-bottom: 1px solid #f7dfe9;
+    }
+
+    .policy-section:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .policy-section h2 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      line-height: 1.2;
+      color: #2f2237;
+    }
+
+    .policy-section p {
+      margin: 0 0 16px;
+      color: #5d4a61;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .policy-section ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .policy-section li {
+      margin-bottom: 12px;
+      color: #5d4a61;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .policy-note {
+      background: #fff3f8;
+      border: 1px solid #f7d5e5;
+      border-radius: 18px;
+      padding: 18px 20px;
+      color: #614c62;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-top: 16px;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, #fff7fb 0%, #fff 100%);
+      border: 1px solid #f2d5e4;
+      border-radius: 22px;
+      padding: 24px;
+      margin-top: 18px;
+    }
+
+    .contact-box p {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 991px) {
+      .policy-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .policy-sidebar {
+        position: static;
+      }
+
+      .policy-content,
+      .policy-hero {
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .policy-page {
+        padding: 120px 14px 60px;
+      }
+
+      .policy-content,
+      .policy-hero,
+      .policy-sidebar {
+        padding: 22px;
+        border-radius: 20px;
+      }
+
+      .policy-hero p,
+      .policy-section p,
+      .policy-section li {
+        font-size: 15px;
+      }
+
+      .policy-section h2 {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+    <div class="container nav">
+     
+      <a href="/index.html" class="logo">
+        <img src="assets/logo.png" alt="">
+      </a>
+ <div class="mobile-navbar-toogle-button">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="mobile-nav-links">
+           <a href="index.html/#features">Features</a>
+        <a href="#use-cases">Use Cases</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="contact-us.html">Contact Us</a>
+      </div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#use-cases">Use Cases</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+       
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="contact-us.html">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="policy-page">
+    <div class="policy-container">
+
+      <section class="policy-hero">
+        <span class="policy-badge">Privacy Policy</span>
+        <h1>Your Privacy Matters at GET PATCHIFY</h1>
+        <p>
+          This Privacy Policy explains how GET PATCHIFY collects, uses, stores, and protects information when merchants, store owners, and end users interact with our app, website, customization tools, installation services, and hosted image services. By using GET PATCHIFY, you agree to the practices described in this policy.
+        </p>
+      </section>
+
+      <div class="policy-layout">
+
+        <aside class="policy-sidebar">
+          <h3>Quick Links</h3>
+          <a href="#information-we-collect">Information We Collect</a>
+          <a href="#how-we-use">How We Use Information</a>
+          <a href="#customization-data">Customization & Image Data</a>
+          <a href="#installation-services">Installation Services</a>
+          <a href="#sharing-data">How We Share Data</a>
+          <a href="#storage-security">Storage & Security</a>
+          <a href="#retention">Data Retention</a>
+          <a href="#rights">Your Rights</a>
+          <a href="#third-party">Third-Party Services</a>
+          <a href="#contact">Contact Us</a>
+        </aside>
+
+        <section class="policy-content">
+
+          <div class="policy-section" id="information-we-collect">
+            <h2>1. Information We Collect</h2>
+            <p>
+              GET PATCHIFY may collect information from merchants, business representatives, and users when they use our website, request a demo, install our app, submit forms, or interact with customization features.
+            </p>
+            <ul>
+              <li>Name, email address, phone number, company name, country, and business details.</li>
+              <li>Store-related information such as store URL, ecommerce platform, configuration settings, and installation preferences.</li>
+              <li>Product customization data, including selected options, uploaded artwork, text entered by users, patch choices, placement data, and other visual customization selections.</li>
+              <li>Communications submitted through forms, support messages, setup requests, or onboarding inquiries.</li>
+            </ul>
+          </div>
+
+          <div class="policy-section" id="how-we-use">
+            <h2>2. How We Use Information</h2>
+            <p>
+              We use collected information to deliver, improve, and support GET PATCHIFY and the services we provide around it.
+            </p>
+            <ul>
+              <li>To install, configure, maintain, and support the GET PATCHIFY app.</li>
+              <li>To provide customization functionality for 3D previews, product personalization, and merchant workflows.</li>
+              <li>To host and serve customization images, previews, and related media where image hosting services are included.</li>
+              <li>To communicate with merchants regarding setup, support, onboarding, billing-related matters, or service updates.</li>
+              <li>To improve app performance, reliability, user experience, and security.</li>
+              <li>To respond to support requests, troubleshooting issues, and service-related inquiries.</li>
+            </ul>
+          </div>
+
+          <div class="policy-section" id="customization-data">
+            <h2>3. Customization, 3D Preview, and Image Data</h2>
+            <p>
+              GET PATCHIFY is designed to power product customization experiences, including patch, embroidery, and visual personalization workflows. As part of this service, we may process and store customization-related content.
+            </p>
+            <ul>
+              <li>User-entered text, chosen colors, design options, placements, and product selections.</li>
+              <li>Uploaded assets, preview images, rendered customization images, and product visualization outputs.</li>
+              <li>Front-end and back-end image references needed to generate previews or support order fulfillment.</li>
+              <li>Hosted image files where image hosting and image delivery services are part of the merchant’s plan or installation package.</li>
+            </ul>
+            <p>
+              Merchants are responsible for ensuring they have the right to use, upload, and process any content, artwork, logos, or customer-submitted assets that pass through their store or through GET PATCHIFY-powered workflows.
+            </p>
+          </div>
+
+          <div class="policy-section" id="installation-services">
+            <h2>4. App Installation and Managed Setup Services</h2>
+            <p>
+              When merchants request app installation, onboarding, or managed setup services from GET PATCHIFY, we may require temporary access to certain store settings, themes, product data, or related store configurations in order to complete setup and integration tasks.
+            </p>
+            <ul>
+              <li>Theme integration and app placement settings.</li>
+              <li>Product-level configuration required to enable customization.</li>
+              <li>Image service setup where applicable.</li>
+              <li>Store configuration needed to activate previews, options, and merchant-facing workflows.</li>
+            </ul>
+            <p>
+              We only use this access to provide requested services, improve functionality, and support the merchant’s implementation.
+            </p>
+          </div>
+
+          <div class="policy-section" id="sharing-data">
+            <h2>5. How We Share Information</h2>
+            <p>
+              We do not sell personal information. We may share information only when necessary to operate, secure, or support GET PATCHIFY.
+            </p>
+            <ul>
+              <li>With trusted service providers involved in hosting, storage, analytics, communications, support, or infrastructure.</li>
+              <li>With ecommerce platform integrations and related technical services where needed for app functionality.</li>
+              <li>When required by law, regulation, legal process, or to protect our rights, users, or systems.</li>
+              <li>As part of a business transaction such as a merger, acquisition, or transfer of assets, where legally permitted.</li>
+            </ul>
+          </div>
+
+          <div class="policy-section" id="storage-security">
+            <h2>6. Data Storage and Security</h2>
+            <p>
+              We take reasonable technical and organizational measures to protect data from unauthorized access, misuse, loss, or disclosure. While no digital system can guarantee absolute security, we work to maintain secure infrastructure and responsible data practices.
+            </p>
+            <ul>
+              <li>Secure storage practices for hosted media and service-related data.</li>
+              <li>Restricted access to systems where appropriate.</li>
+              <li>Monitoring and maintenance intended to reduce operational and security risks.</li>
+            </ul>
+            <div class="policy-note">
+              Please note that merchants are also responsible for protecting their own store credentials, team access, customer communications, and any third-party services connected to their store.
+            </div>
+          </div>
+
+          <div class="policy-section" id="retention">
+            <h2>7. Data Retention</h2>
+            <p>
+              We retain information only for as long as it is reasonably necessary to provide services, support app functionality, comply with legal obligations, resolve disputes, and enforce agreements.
+            </p>
+            <p>
+              Image files, customization outputs, and app-related configuration data may remain stored for operational continuity, hosting services, backup processes, or merchant support unless deletion is requested and retention is no longer required for legitimate service purposes.
+            </p>
+          </div>
+
+          <div class="policy-section" id="rights">
+            <h2>8. Your Rights and Choices</h2>
+            <p>
+              Depending on your location and applicable law, you may have rights related to your personal information, including the right to request access, correction, deletion, or limitation of certain processing activities.
+            </p>
+            <ul>
+              <li>Request access to personal data we hold about you.</li>
+              <li>Request corrections to inaccurate or incomplete information.</li>
+              <li>Request deletion of certain data where legally and operationally permitted.</li>
+              <li>Contact us regarding privacy-related questions or concerns.</li>
+            </ul>
+          </div>
+
+          <div class="policy-section" id="third-party">
+            <h2>9. Third-Party Platforms and Services</h2>
+            <p>
+              GET PATCHIFY may connect with third-party ecommerce platforms, hosting tools, analytics systems, communication services, and related providers. Your use of those services may also be subject to their own privacy policies and terms.
+            </p>
+            <p>
+              We are not responsible for the independent privacy practices of third-party platforms, websites, or tools that are not owned or controlled by GET PATCHIFY.
+            </p>
+          </div>
+
+          <div class="policy-section">
+            <h2>10. Cookies and Usage Data</h2>
+            <p>
+              Our website and services may use cookies or similar technologies to improve functionality, understand usage patterns, maintain sessions, and support analytics and performance monitoring.
+            </p>
+            <p>
+              You may control cookies through your browser settings, although disabling some technologies may affect the functionality of certain parts of the service.
+            </p>
+          </div>
+
+
+          <div class="policy-section">
+            <h2>12. Changes to This Privacy Policy</h2>
+            <p>
+              We may update this Privacy Policy from time to time to reflect changes in our services, legal obligations, technology, or business practices. Any updated version will be posted on this page with the revised effective date.
+            </p>
+            <p>
+              Continued use of GET PATCHIFY after changes are published may indicate acceptance of the updated policy.
+            </p>
+          </div>
+
+          <div class="policy-section" id="contact">
+            <h2>13. Contact Us</h2>
+            <p>
+              If you have any questions about this Privacy Policy, data handling, installation services, hosted image services, or your privacy rights, please contact us.
+            </p>
+
+            <div class="contact-box">
+              <p><strong>GET PATCHIFY</strong></p>
+              <p>Email: support@GET PATCHIFY.com</p>
+              <p>Website: GET PATCHIFY.com</p>
+              <p>Support Hours: Monday to Friday, standard business hours unless otherwise agreed under a support plan.</p>
+            </div>
+
+          </div>
+
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="cta-content">
+      <h2 class="cta-heading">
+        Let’s Bring Your Idea to Life
+      </h2>
+
+      <a href="/contact-us.html" class="cta-btn">
+        Get Started
+        <span class="cta-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M7 17l8-8M7 7h8v8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <div class="footer-links">
+      <a href="">Features</a>
+      <a href="">Use Cases</a>
+      <a href="">How it works</a>
+      <a href="">Pricing</a>
+      <a href="">FAQ</a>
+    </div>
+
+    <div class="container footer-grid">
+      <div>
+        <strong>GET PATCHIFY</strong><br />
+        team@getpatchify.com  
+      </div>
+      <div>© 2026 GET PATCHIFY. All rights reserved.</div>
+    </div>
+  </footer>
+<script>
+const toggleBtn = document.querySelector(".mobile-navbar-toogle-button");
+const navLinks = document.querySelector(".mobile-nav-links");
+
+// toggle button
+toggleBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  toggleBtn.classList.toggle("active");
+  navLinks.classList.toggle("active");
+});
+
+// click anywhere → close
+document.addEventListener("click", () => {
+  toggleBtn.classList.remove("active");
+  navLinks.classList.remove("active");
+});
+
+// prevent closing when clicking inside nav (except links)
+navLinks.addEventListener("click", (e) => {
+  if (e.target.tagName !== "A") {
+    e.stopPropagation();
+  }
+});
+
+// 👇 IMPORTANT: link click → close menu
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    toggleBtn.classList.remove("active");
+    navLinks.classList.remove("active");
+  });
+});
+</script>
+</body>
+</html>
