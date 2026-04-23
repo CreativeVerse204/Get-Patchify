@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GETpatchify Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<style>
+  body{
+background: linear-gradient(135deg, #f8e6ee 0%, #f3dbe7 100%);
+  }
+    .supernova {
+    background: transparent !important;
+}
+.formFooter{
+display:none;
+}
+#contact-form{
+padding: 88px 0;
+    padding-top: 0px;
+    height: 100vh;
+    overflow: hidden;
+}
+.contact-us-footer-bottom{
+    padding: 40px 0;
+    background: #000;
+    position: relative;
+    bottom: 35px;
+    color:#fff;
+}
+
+.customize-section {
+  padding: 70px 20px;
+}
+
+.customize-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.customize-image-card {
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  max-width: 420px;
+}
+
+.customize-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.customize-card-content {
+  padding: 18px 20px;
+}
+
+.customize-card-content h4 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #1f1f1f;
+}
+
+.customize-card-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.customize-content {
+  max-width: 520px;
+}
+
+.customize-label {
+display: inline-block;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ec4899;
+}
+
+.customize-content h2 {
+margin: 0 0 18px;
+    font-size: 40px;
+    line-height: 1.05;
+    color: #151515;
+  font-weight: 700;
+}
+
+.customize-content p {
+  margin: 0 0 24px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #5b5b5b;
+}
+
+.customize-rating {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+  font-size: 15px;
+  color: #444;
+}
+
+.customize-rating .stars {
+  color: #f4b400;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.customize-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 28px;
+  background: linear-gradient(135deg, #f36ea4, #d94d8a);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(217, 77, 138, 0.25);
+}
+
+.customize-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(217, 77, 138, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.contact-us-footer-bottom .footer-grid{
+      width: 100%;
+    padding: 20px 40px !important;
+}
+@media (max-width: 1500px) and (min-width: 1025px) {
+  
+  #contact-form{
+    height: 100%;
+    padding-top:0px;
+  }
+  .contact-us-footer-bottom {
+    position: relative;
+    bottom: 200px;
+  }
+}
+@media (max-width: 1024px) {
+    #contact-form{
+    height: 70vh;
+    padding-top:0px;
+  }
+  .customize-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .customize-image-card {
+    max-width: 100%;
+  }
+
+  .customize-content h2 {
+    font-size: 42px;
+  }
+
+  .customize-image {
+    height: 360px;
+  }
+  #contact-form{
+    height: 75vh;;
+  }
+}
+
+@media (max-width: 576px) {
+   #contact-form{
+    height: 100vh;
+  }
+  .customize-section {
+    padding: 50px 16px;
+  }
+
+  .customize-content h2 {
+    font-size: 34px;
+  }
+
+  .customize-content p {
+    font-size: 15px;
+  }
+
+  .customize-rating {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .customize-image {
+    height: 280px;
+  }
+
+  .customize-btn {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}
+</style>
+<body>
+<header>
+    <div class="container nav">
+     
+      <a href="/index.html" class="logo">
+        <img src="assets/logo.png" alt="">
+      </a>
+ <div class="mobile-navbar-toogle-button">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="mobile-nav-links">
+           <a href="#features">Features</a>
+        <a href="#use-cases">Use Cases</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+          <a href="/contact-us.html">Contact Us</a>
+      </div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#use-cases">Use Cases</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+       
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="/contact-us.html">Contact Us</a>
+      </div>
+    </div>
+  </header>
+  <section class="customize-section">
+  <div class="customize-container">
+    <div class="customize-image-card">
+      <img src="assets/contact-us-image.webp" alt="Customized product" class="customize-image" />
+      <div class="customize-card-content">
+        <h4>Cozy Craft Collection</h4>
+        <p>Soft details • Custom text • Made with love</p>
+      </div>
+    </div>
+
+    <div class="customize-content">
+      <span class="customize-label">CREATE YOUR STYLE</span>
+      <h2>Design Something <br />Warm & Memorable</h2>
+      <p>
+        Add your own touch with personalized details, colors, and textures.
+        Perfect for gifting, branding, or making your piece feel truly yours.
+      </p>
+
+      <a href="#contact-form" class="customize-btn">Start Customizing</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact-form">
+<script type="text/javascript" src="https://form.jotform.com/jsform/261102749684057"></script>
+</section>
+
+
+
+
+</body>
+
+
+  <div class="contact-us-footer-bottom">
+    <div class="cta-content">
+  <h2 class="cta-heading">
+    Let’s Bring Your Idea to Life
+  </h2>
+
+  <a href="#contact-form" class="cta-btn">
+    Get Started
+    <span class="cta-icon">
+      <svg viewBox="0 0 24 24">
+        <path d="M7 17l8-8M7 7h8v8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </span>
+  </a>
+</div>
+    <div class="footer-links">
+      <a href="">Features</a>
+      <a href="">Use Cases</a>
+      <a href="">How it works</a>
+      <a href="">Pricing</a>
+      <a href="">FAQ</a>
+    </div>
+    <div class="container footer-grid">
+      <div>
+        <strong>GETpatchify</strong><br>
+        team@getpatchify.com  
+      </div>
+      <div>© 2026 GETpatchify. All rights reserved.</div>
+    </div>
+
+    
+  </div>
+
+
+  <script id="v4h3pk">
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.querySelector('.customize-btn');
+    if (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector('#contact-form');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+  });
+</script>
+<script>
+const toggleBtn = document.querySelector(".mobile-navbar-toogle-button");
+const navLinks = document.querySelector(".mobile-nav-links");
+
+// toggle button
+toggleBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  toggleBtn.classList.toggle("active");
+  navLinks.classList.toggle("active");
+});
+
+// click anywhere → close
+document.addEventListener("click", () => {
+  toggleBtn.classList.remove("active");
+  navLinks.classList.remove("active");
+});
+
+// prevent closing when clicking inside nav (except links)
+navLinks.addEventListener("click", (e) => {
+  if (e.target.tagName !== "A") {
+    e.stopPropagation();
+  }
+});
+
+// 👇 IMPORTANT: link click → close menu
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    toggleBtn.classList.remove("active");
+    navLinks.classList.remove("active");
+  });
+});
+</script>
+</html>

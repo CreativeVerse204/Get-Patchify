@@ -1,0 +1,1483 @@
+ :root {
+   
+      --card: #ffffff;
+      --line: #f2d7e1;
+      --brand: #ec4899;
+      --brand-2: #f472b6;
+      --accent: #f9a8d4;
+      --light: #fff7fb;
+      --success: #16a34a;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+      --radius: 22px;
+      --radius-sm: 14px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(to right, #ffd2f7, #fff0e5);
+      line-height: 1.55;
+    }
+   h1, h2, h3 {
+   font-family: "Montserrat", sans-serif;
+   }
+   h2{
+    font-weight: 600 !important;
+   }
+   p{
+    color:#000 !important;
+    font-style: 16px !important;
+   }
+   body,p,a,button,span{
+font-family:'Inter',sans-serif;
+}
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+.mobile-nav-links{
+  visibility: hidden;
+  display: none;
+}
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 0;
+      cursor: pointer;
+      transition: 0.25s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, var(--brand), var(--brand-2));
+      color: white;
+      box-shadow: 0 12px 30px rgba(99, 102, 241, 0.28);
+    }
+
+    .btn-primary:hover { transform: translateY(-2px); }
+
+    .btn-secondary {
+      background: white;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .tag{
+    display: inline-block;
+    padding: 12px 28px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    min-width: 300px;
+    background: 
+radial-gradient(circle at center, rgba(0,0,0,.08) 0%, transparent 60%), 
+linear-gradient(90deg, transparent 0%, var(--brand-2) 15%, var(--brand-2) 85%, transparent 100%);
+
+   
+}
+  .formFooter {
+        display:none;
+    }
+  
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(248, 250, 252, 0.82);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      gap: 16px;
+      padding:0 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .logo-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      box-shadow: var(--shadow);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      color: var(--muted);
+      font-weight: 600;
+      flex-wrap: wrap;
+    }
+
+    .nav-cta {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    section { 
+      padding: 88px 20px; 
+      padding-top:0px;
+    }
+
+    .hero {
+      padding-top: 48px;
+      padding-bottom: 70px;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+    }
+    .footer-links{
+      display: flex;
+      flex-direction:column;
+      gap:8px;
+    }
+    .footer-links{
+  padding:40px;
+  padding-top: 20px;
+}
+.footer-links a{
+  color:#fff;
+  text-decoration: none;;
+}
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .hero h1 {
+    font-size: 45px;
+    line-height: 1;
+    margin: 18px 0 18px;
+    letter-spacing: 0.3px;
+    font-weight: 800;
+    text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 640px;
+      margin: 0 0 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+
+    .proof-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .proof-chip {
+      background: rgba(255,255,255,0.7);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 14px;
+    }
+
+    .hero-card {
+      padding: 22px;
+          height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .hero-card img{
+height: 100%;
+    max-height: 65VH;
+    object-fit: contain;
+    width: 100%;
+    }
+    
+    .dashboard {
+      display: grid;
+      gap: 18px;
+    }
+
+    .panel {
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      padding: 18px;
+      background: linear-gradient(180deg, #fff, #f8fafc);
+    }
+
+    .panel-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .panel-title { font-weight: 800; }
+    .panel-sub { color: var(--muted); font-size: 14px; }
+
+    .mock-product {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .product-visual {
+      aspect-ratio: 1;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #dbeafe, rgba(124, 58, 237, 0.18));
+      position: relative;
+      overflow: hidden;
+    }
+
+    .patch-shape {
+      position: absolute;
+      inset: 20% 20% auto auto;
+      width: 86px;
+      height: 86px;
+      background: linear-gradient(135deg, var(--accent), #fb7185);
+      border-radius: 24px;
+      transform: rotate(16deg);
+      box-shadow: 0 14px 25px rgba(249, 115, 22, 0.25);
+    }
+
+    .shirt-base {
+      position: absolute;
+      inset: 12% 10% 10% 10%;
+      border-radius: 24px;
+      background: linear-gradient(90deg, #ec489940, #ffbade);
+    }
+
+    .config-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .option {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .option strong {
+      display: block;
+      color: var(--text);
+      margin-top: 4px;
+      font-size: 15px;
+    }
+
+    .section-head {
+      text-align: center;
+      margin: 0 auto 44px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(30px, 4vw, 50px);
+      line-height: 1.05;
+      margin: 14px 0 14px;
+      letter-spacing: -0.04em;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .logos {
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
+    .logo-strip {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .logo-item {
+      padding: 18px;
+      text-align: center;
+      border-radius: 18px;
+      border: 1px dashed #cbd5e1;
+      background: rgba(255,255,255,0.8);
+      color: #64748b;
+      font-weight: 800;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .feature-card, .use-card, .step-card, .pricing-card, .faq-item, .testimonial-card, .audience-card {
+      
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      background: #fff;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+    }
+   .icon img{
+    height: 70%;
+    width:70%;
+   }
+    .feature-card h3, .use-card h3, .audience-card h3, .pricing-card h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      letter-spacing: -0.03em;
+    }
+
+    .feature-card p, .use-card p, .audience-card p, .step-card p, .pricing-card p, .testimonial-card p, .faq-item p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .bullets {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .bullets li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--muted);
+    }
+
+    .bullets li::before {
+      content: "✓";
+      color: var(--brand);
+      font-weight: 900;
+      margin-top: 2px;
+    }
+
+    .audience-grid, .testimonial-grid, .pricing-grid { display: grid; gap: 20px; }
+    .audience-grid { grid-template-columns: repeat(3, 1fr); }
+    .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
+    .pricing-grid { grid-template-columns: 1fr; }
+
+    .price {
+      font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    margin: 14px 0;
+    font-family: "Montserrat", sans-serif;
+    }
+
+    .price small {
+    font-size: 15px;
+    color: var(--muted);
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    }
+
+    .pricing-card.featured {
+      border: 2px solid rgba(124,58,237,0.35);
+      transform: translateY(-6px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: linear-gradient(90deg, var(--brand), var(--brand-2));
+      color: white;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .step-no {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: white;
+      font-size: 22px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .split-cta {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 22px;
+      align-items: center;
+      background: linear-gradient(135deg, #111827, #312e81);
+      color: white;
+      padding: 36px;
+      border-radius: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .split-cta p { color: rgba(255,255,255,0.78); }
+
+    .faq-list {
+      display: grid;
+      gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .faq-item h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+#features,
+#use-cases,
+#how-it-works,
+#pricing,
+#faq {
+  scroll-margin-top: 100px;
+}
+    footer {
+      padding: 36px 0 60px;
+      color: var(--muted);
+      background: #000;
+    color: #fff;
+        bottom: 35px;
+        position: relative;
+    }
+.logo img{
+height: 18px;
+    width: auto;
+}
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--line);
+      width:100%;
+      padding: 20px 40px;
+    }
+    .imgs-marque-wrap{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    padding:18px 0;
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .track{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    width: max-content;
+    animation: brandMarquee 50s linear infinite;
+  }
+.brands{
+  padding:0px;
+}
+  .track img{
+   height: 209px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    background: content-box;
+    padding: 14px 22px;
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+
+  .track img:hover{
+    transform:translateY(-4px);
+    box-shadow:0 14px 30px rgba(236,72,153,0.14);
+  }
+
+  .imgs-marque-wrap:hover .track{
+    animation-play-state:paused;
+  }
+
+  @keyframes brandMarquee{
+    0%{
+      transform:translateX(0);
+    }
+    100%{
+      transform:translateX(-50%);
+    }
+  }
+    @media (max-width: 1024px) {
+       .track{
+      gap:18px;
+      animation-duration:24s;
+    }
+section {
+  padding-left:20px;
+  padding-right: 20px;
+}
+    .track img{
+      height:180x;
+      max-width:180px;
+      padding:12px 18px;
+      border-radius:16px;
+    }
+      .hero-grid,
+      .two-col,
+      .features-grid,
+      .audience-grid,
+      .testimonial-grid,
+      .pricing-grid,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .logo-strip { grid-template-columns: repeat(2, 1fr); }
+      .mock-product { grid-template-columns: 1fr; }
+      .split-cta { grid-template-columns: 1fr; }
+    }
+/*trusted oil change process section*/
+.trusted-oil-change-evanston-process-main-content-wrapper-only-for-mobile{
+  display: none;
+}
+.trusted-oil-change-evanston-process-section{
+  padding: 40px;
+}
+.trusted-oil-change-evanston-process-container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* ========= BASE ========= */
+.trusted-oil-change-evanston-process{ 
+  background:#eef2f5; 
+  padding:70px 0; 
+}
+.trusted-oil-change-evanston-process__inner{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid; 
+  grid-template-columns: 1.05fr .95fr; 
+  gap:56px;
+  row-gap: 30px;
+  align-items:end;
+}
+.trusted-oil-change-evanston-process-main-content .trusted-oil-change-evanston-process-main-content{
+  font-size: 18px;
+}
+.trusted-oil-change-evanston-process-main-content .trusted-oil-change-evanston-process__tag{
+  display:inline-block; 
+  background:#e02b20; 
+  color:#fff;
+  padding:10px 30px; 
+  font-weight:400; 
+  letter-spacing:.06em;
+  font-size:13px; 
+  text-transform:uppercase;
+  width:fit-content;
+  line-height:1;
+}
+.is-active .trusted-oil-change-evanston-process-step__content .trusted-oil-change-evanston-process-step__title{
+	color:#000;
+ font-weight: 700;
+	}
+.trusted-oil-change-evanston-process-main-content .trusted-oil-change-evanston-process__title{
+    margin: 0px 0 15px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    line-height: 46px;
+    text-transform: capitalize;
+}
+
+/* ========= LEFT STEPS ========= */
+.trusted-oil-change-evanston-process__left .trusted-oil-change-evanston-process-main-content{
+  display: flex;
+  flex-direction: column;
+}
+	.trusted-oil-change-evanston-process__left p{
+		color: #000;
+    font-size: 16px;
+    font-weight: 400;
+	}
+.trusted-oil-change-evanston-process-steps{
+  position:relative;
+  display:flex; flex-direction:column;
+  gap:0;
+  padding-left:34px; /* space for the line */
+}
+
+.trusted-oil-change-evanston-process-steps .trusted-oil-change-evanston-process-steps__track{
+  position:absolute; 
+  left:0px;
+  top:0; 
+  bottom:0;
+  width:2px; 
+  background:#cfd4d8; 
+  border-radius:20px;
+}
+
+.trusted-oil-change-evanston-process-steps .trusted-oil-change-evanston-process-steps__active{
+  position:absolute; 
+  left:0px;
+  width:2px; 
+  background: var(--brand); 
+  border-radius:20px;
+  transition: top .28s ease, height .28s ease;
+  will-change: top, height;
+}
+
+.trusted-oil-change-evanston-process-steps .trusted-oil-change-evanston-process-step{
+  appearance:none; border:0; background:transparent;
+  text-align:left; width:100%;
+  padding: 0px 0px 10px 0px;
+  cursor:pointer;
+}
+
+.trusted-oil-change-evanston-process-step__content .trusted-oil-change-evanston-process-step__title{
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  color: #A1A1A1;
+  transition: color .2s ease;
+}
+
+.trusted-oil-change-evanston-process-step__content .trusted-oil-change-evanston-process-step__desc{
+  display:grid;
+  grid-template-rows:0fr;
+  opacity:0;
+  transform: translateY(-6px);
+  transition: grid-template-rows .75s ease, opacity .75s ease, transform .75s ease;
+  margin-top:5px;
+  color: #1A1A1A;
+  line-height:1.7;
+  font-size:15px;
+  font-weight: 400;
+}
+	.trusted-oil-change-evanston-process__right, .trusted-oil-change-evanston-process__left{
+		margin-bottom: auto;
+	}
+.trusted-oil-change-evanston-process-step__desc > span{ overflow:hidden; }
+.trusted-oil-change-evanston-process__right
+/* ACTIVE */
+.trusted-oil-change-evanston-process-step.is-active .trusted-oil-change-evanston-process-step__title{ 
+	color: #1A1A1A;
+}
+.trusted-oil-change-evanston-process-step.is-active .trusted-oil-change-evanston-process-step__desc{
+  grid-template-rows:1fr;
+  opacity:1;
+  transform: translateY(0);
+}
+/* Optional: subtle hover */
+.trusted-oil-change-evanston-process-step:hover .trusted-oil-change-evanston-process-step__title{ color:#3f4448; }
+
+/* ========= RIGHT IMAGES ========= */
+.oil-images{
+  position:relative;
+  width:100%;
+  aspect-ratio: 3 / 3;
+  border-radius: 0;
+  overflow:hidden;
+}
+.oil-images img{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition: opacity .28s ease;
+  will-change: opacity;
+  border-radius: 12px;
+}
+.oil-images img.evanston-Images-is-active{ opacity:1; }
+.trusted-oil-change-evanston-process-step:hover .trusted-oil-change-evanston-process-step__title{ color:#E02B20; }
+.trusted-oil-change-evanston-process-step.is-active:hover .trusted-oil-change-evanston-process-step__title{
+  color:#0b0b0b;
+}
+/*oil-change-need-section*/
+.oil-change-need-conatiner{
+  max-width: 1300px;
+  margin:0 auto;
+}
+.oil-change-need-section{
+  position: relative;
+  background: url('images/transparent\ background.png') center / cover no-repeat;
+  overflow: hidden;
+  padding: 5rem 0;
+  background-color: #1A1A1A;
+}
+.oil-change-need-container .oil-change-need__tag{
+    display: inline-block;
+    background: #e02b20;
+    color: #fff;
+    padding: 8px 12px;
+    font-weight: 400;
+    letter-spacing: .06em;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+.oil-change-need-container .oil-change-need-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    gap: 10px;
+}
+.oil-change-need-inner .oil-change-need__title{
+    margin: 0px;
+    font-size: 45px;
+    line-height: 1.05;
+    font-weight: 800;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+.oil-change-need__title span{
+    color:#E02B20
+}
+.oil-change-need-inner .oil-change-need-main-content{
+    font-size: 20px;
+    color:#fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.oil-change-need-inner .oil-change-need-indications-wrapper{
+    border: 1px solid #fff;
+    background: #262626;
+}
+.oil-change-need-indications-wrapper .oil-change-need-incator-wrapp {
+    border-bottom: 1px solid #fff;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.oil-change-need-incator-wrapp .oil-change-indicator-content{
+  color:#fff;
+}
+.oil-change-need-footer-text span{
+font-size: 15px;
+color:#ffffff;
+font-style: italic;
+}
+.oil-change-need-footer-text span span{
+  color: #E02B20;
+}
+.oil-change-need-incator-wrapp .oil-change-indicator-content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.oil-change-need-incator-wrapp .oil-change-indicator-content-bold-heading{
+  margin:0px;
+  font-weight: bold;
+}
+.oil-change-need-footer-text{
+  margin-top: 10px;
+}
+.oil-change-need-incator-wrapp .oil-change-indicator-image{
+  height: 50px;
+  width: 50px;
+}
+.oil-change-need-incator-wrapp .oil-change-indicator-image img{
+  height: 50px;
+  width: 50px;
+}
+#use-cases {
+  padding: 0px 0 80px;
+  
+}
+
+#use-cases .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#use-cases .section-head {
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+
+#use-cases .section-head h2 {
+  font-size: 40px;
+  line-height: 1.15;
+  margin: 16px 0 16px;
+  color: #111;
+}
+
+#use-cases .section-head p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+.use-case-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.use-case-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 36px;
+  background: #ffe0f1;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.use-case-row.reverse .use-case-media {
+  order: 2;
+}
+
+.use-case-row.reverse .use-case-content {
+  order: 1;
+}
+
+.use-case-media {
+  width: 100%;
+}
+
+.use-case-media video {
+ width: 100%;
+    display: block;
+    object-fit: cover;
+    border: none;
+    border-radius: 12px;
+}
+
+.use-case-content {
+  padding: 8px 0;
+}
+
+.use-case-label {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 14px;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom:5px;
+}
+
+.use-case-content h3 {
+  font-size: 25px;
+  line-height: 1.2;
+  color: #111;
+  margin: 0 0 16px;
+}
+
+.use-case-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0 0 14px;
+}
+
+.use-case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.use-case-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  box-shadow: var(--shadow);
+  background: var(--brand-2);
+  color: #fff;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#how-it-works .step-card{
+        grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 40px;
+    padding: 40px;
+}
+.how-it-works-steps-images img{
+  border-radius: 15px;
+  box-shadow: -1px 1px 15px 0px #919191;
+}
+#how-it-works .step-card p{
+  font-size: 18px;
+}
+
+#how-it-works .step-card h3{
+  font-size: 25px;
+    margin: 10px 0;
+}
+.gp-reviews-section{
+  padding:80px 0;
+  padding-top:0px;
+}
+
+.gp-container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+.gp-review-heading{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.gp-review-heading h2{
+  font-size:42px;
+  line-height:1.2;
+  color:#111;
+  margin:0;
+  font-weight:800;
+}
+
+.gp-review-heading p{
+  margin-top:12px;
+  font-size:18px;
+  color:#555;
+}
+
+.gp-review-slider{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.gp-review-card{
+  background:#fff;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:0 12px 35px rgba(0,0,0,0.06);
+  min-height:280px;
+}
+
+.gp-review-card h3{
+  font-size:22px;
+  margin:0;
+  color:#111;
+  font-weight:700;
+}
+
+.gp-review-card span{
+  display:block;
+  margin-top:6px;
+  color:#ec4899;
+  font-size:15px;
+  font-weight:600;
+}
+
+.gp-review-card p{
+  margin-top:0px;
+  color:#333;
+  font-size:17px;
+  line-height:1.8;
+}
+.gp-review-card svg{
+  margin: 10px 0 0px;
+}
+.gp-related-projects{
+    padding: 80px 0;
+    padding-top:0px;
+  }
+
+  .gp-container{
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  .gp-related-head{
+    margin-bottom: 28px;
+  }
+
+  .gp-related-head h2{
+    margin: 0;
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #1d1d1f;
+  }
+
+  .gp-project-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .gp-project-card{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .gp-project-image{
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    background: #f3f3f3;
+    aspect-ratio: 4 / 5;
+  }
+
+  .gp-project-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity .45s ease, transform .6s ease;
+  }
+
+  .gp-project-image .img-hover{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+  }
+
+  .gp-project-card:hover .img-default{
+    opacity: 0;
+    transform: scale(1.04);
+  }
+
+  .gp-project-card:hover .img-hover{
+    opacity: 1;
+    transform: scale(1.04);
+  }
+
+  .gp-project-info{
+    padding-top: 14px;
+  }
+
+  .gp-project-info h3{
+    margin: 0 0 6px;
+    font-size: 28px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #161616;
+  }
+
+  .gp-project-info p{
+    margin: 0;
+    font-size: 16px;
+    color: #5f4b57;
+  }
+.cta-content {
+  padding:0 40px;
+  padding-bottom: 25px;
+}
+
+.cta-heading {
+      font-size: 40px;
+    font-weight: 500 !important;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 14px 26px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    width: 30%;
+    color: #000;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+
+.cta-icon {
+  display: flex;
+}
+
+.cta-icon svg {
+  width: 18px;
+  height: 18px;
+}
+@media (max-width: 1024px){
+  .trusted-oil-change-evanston-process__inner{
+			    grid-template-columns: none !important;
+    gap: 20px;
+		}
+    #use-cases {
+    padding: 64px 0;
+  }
+
+  #use-cases .section-head h2 {
+    font-size: 32px;
+  }
+
+  .use-case-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 22px;
+  }
+
+  .use-case-row.reverse .use-case-media,
+  .use-case-row.reverse .use-case-content {
+    order: unset;
+  }
+
+  .use-case-content h3 {
+    font-size: 26px;
+  }
+
+  
+
+  .gp-review-card{
+    min-width:85%;
+    flex:0 0 auto;
+    scroll-snap-align:start;
+  }
+
+  .gp-review-heading h2{
+    font-size:32px;
+  }
+
+    .gp-related-head h2{
+      font-size: 32px;
+    }
+
+    .gp-project-info h3{
+      font-size: 24px;
+    }
+    .hero {
+      height: 100%;
+    }
+    .gp-review-slider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .nav {
+      padding: 0 20px;
+    }
+    .nav-cta{
+      display: none;
+    }
+}
+    @media (max-width: 720px) {
+      .nav-links { display: none; }
+      .gp-review-slider{
+    display:flex;
+    gap:18px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    padding-bottom:10px;
+  }
+
+  .gp-review-slider::-webkit-scrollbar{
+    height:6px;
+  }
+
+  .gp-review-slider::-webkit-scrollbar-thumb{
+    background:#ec4899;
+    border-radius:50px;
+  }
+.mobile-navbar-toogle-button {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-navbar-toogle-button span {
+  position: absolute;
+  width: 26px;
+  height: 2.5px;
+  background: #111;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.mobile-navbar-toogle-button span:nth-child(1) {
+  transform: translateY(-5px) rotate(0deg);
+}
+
+.mobile-navbar-toogle-button span:nth-child(2) {
+  transform: translateY(5px) rotate(0deg);
+}
+
+/* open state */
+.mobile-navbar-toogle-button.active span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.mobile-navbar-toogle-button.active span:nth-child(2) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.mobile-nav-links {
+  position: absolute;
+  top: 100px;
+  background: #fff;
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-12px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.mobile-nav-links.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+      .nav{
+        width:100%;
+        padding:0 20px;
+      }
+
+
+  .nav-cta{
+    display:none;
+  }
+      .cta-heading {
+    font-size: 25px;
+  }
+  .cta-btn{
+    padding: 5px 26px;
+        width: 75%;
+  }
+  .mobile-nav-links a{
+    font-weight: 600;
+  }
+      section { padding: 70px 0px; }
+      .hero { 
+        padding: 30px 20px; 
+        height: 100%;
+      }
+      .tag{
+        font-size: 9px;
+      }
+      .hero h1 {
+    font-size: 30px;
+      }
+      .config-grid { grid-template-columns: 1fr; }
+      .nav-cta .btn-secondary { display: none; }
+      .logo-strip { grid-template-columns: 1fr; }
+        .imgs-marque-wrap{
+      padding:14px 0;
+    }
+#how-it-works .step-card{
+      grid-template-columns: 1fr ;
+}
+#pricing{
+  padding:0px 20px;
+}
+    .track{
+      gap:14px;
+      animation-duration:20s;
+    }
+
+    .track img{
+      height: 120px;
+        max-width: 160px;
+      padding:10px 14px;
+      border-radius:14px;
+    }
+    	.trusted-oil-change-evanston-process__right {
+			margin-top: 0px !important;
+		}
+		.trusted-oil-change-evanston-process-section {
+			padding: 20px !important;
+		}
+		.trusted-oil-change-evanston-process-steps{
+			padding-left: 15px !important;
+		}
+    	.jw-location-intro__title, .trusted-oil-change-evanston-process-main-content .trusted-oil-change-evanston-process__title {
+    font-size: 25px !important;
+    line-height: 22px !important;
+			        text-align: center;
+}
+		.trusted-oil-change-evanston-process-main-content .location-intro__kicker, .jw-tires-offer-deals__container .location-intro__kicker{
+			justify-content: center;
+		}
+		.trusted-oil-change-evanston-process-main-content .trusted-oil-change-evanston-process__title{
+			 line-height: 30px !important;
+		}
+		.jw-tires-offer-brand-slider-main-wrapper_parent{
+			padding:0 10px;
+		}
+		
+	.trusted-oil-change-evanston-process-main-content-wrapper-only-for-mobile{
+		display:block !important;
+	}
+
+		.trusted-oil-change-evanston-process-main-content-wrapper-only-for-mobile p{
+			margin-bottom: 0px;
+    text-align: center;
+		}
+		.trusted-oil-change-evanston-process-main-content-wrapper-only-for-mobile{
+			order:1;
+		}
+		.trusted-oil-change-evanston-process__right{
+			order:2;
+		}
+		.trusted-oil-change-evanston-process__left{
+			order:3;
+		}
+    .trusted-oil-change-evanston-process-main-content-wrapper-only-for-mobile{
+  display: block;
+}
+.only-for-desktop-main-content-wrapper{
+  display:none !important;
+}
+.trusted-oil-change-evanston-process__left p{
+  display: none;
+}
+#use-cases {
+    padding: 54px 0;
+  }
+
+  #use-cases .container {
+    padding: 0 20px;
+  }
+#how-it-works{
+  padding:30px 20px;
+}
+#faq{
+  padding:50px 20px;
+}
+  #use-cases .section-head {
+    margin-bottom: 36px;
+  }
+
+  #use-cases .section-head h2 {
+    font-size: 28px;
+  }
+
+  #use-cases .section-head p {
+    font-size: 16px;
+  }
+
+  .use-case-row {
+    border-radius: 18px;
+    padding: 16px;
+    gap: 18px;
+  }
+
+  .use-case-media video {
+    border-radius: 14px;
+  }
+
+  .use-case-content h3 {
+    font-size: 22px;
+  }
+
+  .use-case-content p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .use-case-tags span {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+    .gp-reviews-section{
+    padding:60px 0;
+  }
+
+  .gp-review-heading h2{
+    font-size:26px;
+  }
+
+  .gp-review-heading p{
+    font-size:16px;
+  }
+
+  .gp-review-card{
+    padding:24px;
+    width:100%;
+  }
+
+  .gp-review-card p{
+    font-size:16px;
+    line-height:1.7;
+  }
+    }
