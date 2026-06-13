@@ -415,9 +415,12 @@ height: 100%;
     .audience-grid { grid-template-columns: repeat(3, 1fr); }
     .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
     .pricing-grid { grid-template-columns: 1fr; }
-
+    .pricing-card h3{
+	    font-size: 40px;
+		    font-weight: 600;
+	}
     .price {
-      font-size: 40px;
+      font-size: 20px;
     font-weight: 700;
     letter-spacing: -0.04em;
     margin: 14px 0;
