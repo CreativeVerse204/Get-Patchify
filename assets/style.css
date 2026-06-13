@@ -414,7 +414,7 @@ height: 100%;
     .audience-grid, .testimonial-grid, .pricing-grid { display: grid; gap: 20px; }
     .audience-grid { grid-template-columns: repeat(3, 1fr); }
     .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
-    .pricing-grid { grid-template-columns: 1fr; }
+    .pricing-grid { grid-template-columns: 1fr 1fr; }
     .pricing-card h3{
 	    font-size: 40px;
 		    font-weight: 600;
@@ -577,6 +577,7 @@ height: 18px;
       gap:18px;
       animation-duration:24s;
     }
+		.pricing-grid { grid-template-columns: 1fr; }
 section {
   padding-left:20px;
   padding-right: 20px;
