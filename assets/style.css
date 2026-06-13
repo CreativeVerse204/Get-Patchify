@@ -410,7 +410,9 @@ height: 100%;
       font-weight: 900;
       margin-top: 2px;
     }
-
+    #pricing .container .pricing-grid{
+		grid-template-columns: 1fr 1fr !important;
+	}
     .audience-grid, .testimonial-grid, .pricing-grid { display: grid; gap: 20px; }
     .audience-grid { grid-template-columns: repeat(3, 1fr); }
     .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
