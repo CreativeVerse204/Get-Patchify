@@ -1237,6 +1237,9 @@ display: inline-flex;
     }
 }
     @media (max-width: 720px) {
+		#pricing .container .pricing-grid {
+    grid-template-columns: 1fr !important;
+}
       .nav-links { display: none; }
       .gp-review-slider{
     display:flex;
